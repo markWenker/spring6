@@ -1,0 +1,53 @@
+plugins {
+    id 'java'
+}
+
+group 'org.springframework'
+version '5.2.12.BUILD-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    api(project(":spring-core"))
+    optional(project(":spring-aop"))
+    optional(project(":spring-beans"))
+    optional(project(":spring-context"))
+    optional(project(":spring-jdbc"))
+    optional(project(":spring-orm"))
+    optional(project(":spring-tx"))
+    optional(project(":spring-web"))
+    optional(project(":spring-webflux"))
+    optional(project(":spring-webmvc"))
+    optional(project(":spring-websocket"))
+    optional(project(":spring-beans"))
+    optional(project(":spring-core"))
+    optional(project(":spring-context"))
+    optional(project(":spring-webmvc"))
+    optional(project(":spring-jdbc"))
+    optional(project(":spring-orm"))
+    optional(project(":spring-tx"))
+    optional(project(":spring-web"))
+    optional(project(":spring-context-indexer"))
+    optional(project(":spring-context-support"))
+    optional(project(":spring-expression"))
+    optional(project(":spring-instrument"))
+    optional(project(":spring-jcl"))
+    optional(project(":spring-jms"))
+    optional(project(":spring-messaging"))
+    optional(project(":spring-oxm"))
+    optional(project(":spring-test"))
+    optional(project(":spring-webflux"))
+    optional(project(":spring-websocket"))
+    optional('org.aspectj:aspectjweaver:1.9.19')
+    optional(project(":spring-aop"))
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+//    新增连接数据库相关依赖
+    optional('com.alibaba:druid:1.2.15')
+    optional('mysql:mysql-connector-java:8.0.30')
+}
+
+test {
+    useJUnitPlatform()
+}
