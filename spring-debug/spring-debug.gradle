@@ -1,13 +1,5 @@
-plugins {
-    id 'java'
-}
+description = "Spring Personal Debug Framework"
 
-group 'org.springframework'
-version '5.2.12.BUILD-SNAPSHOT'
-
-repositories {
-    mavenCentral()
-}
 
 dependencies {
     api(project(":spring-core"))
