@@ -1,4 +1,4 @@
-package org.springframework.xmlLoad;
+package org.springframework.xmlload;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.entity.Person;
