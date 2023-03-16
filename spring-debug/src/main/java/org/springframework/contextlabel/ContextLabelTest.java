@@ -10,7 +10,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
  */
 public class ContextLabelTest {
 	public static void main(String[] args) {
-		ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("contextlabel/contextLabel.xml");
+		ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("xml/contextlabel/contextLabel.xml");
 		DriverManagerDataSource dataSource = (DriverManagerDataSource) ac.getBean("dataSource");
 		System.out.println(dataSource.getUsername());
 		System.out.println(dataSource.getPassword());

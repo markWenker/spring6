@@ -10,7 +10,7 @@ import org.springframework.entity.Person;
  */
 public class XmlLoadTest {
 	public static void main(String[] args) {
-		ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("xmlLoad/xmlLoad.xml");
+		ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("xml/xmlLoad/xmlLoad.xml");
 		Person person = (Person) ac.getBean("person");
 		System.out.println("name type: " + person);
 		Person bean = ac.getBean(Person.class);
