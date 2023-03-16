@@ -1,6 +1,7 @@
 package org.springframework.contextlabel;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 /**
  * 解析context标签
@@ -10,7 +11,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class ContextLabelTest {
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("contextlabel/contextLabel.xml");
-		String[] beanDefinitionNames = ac.getBeanDefinitionNames();
-		System.out.println(beanDefinitionNames);
+		DriverManagerDataSource dataSource = (DriverManagerDataSource) ac.getBean("dataSource");
+		System.out.println(dataSource.getUsername());
+		System.out.println(dataSource.getPassword());
 	}
 }
