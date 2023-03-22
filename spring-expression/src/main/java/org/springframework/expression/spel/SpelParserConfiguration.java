@@ -20,13 +20,14 @@ import org.springframework.core.SpringProperties;
 import org.springframework.lang.Nullable;
 
 /**
+ * 定义一些spEl 解析器
  * Configuration object for the SpEL expression parser.
  *
  * @author Juergen Hoeller
  * @author Phillip Webb
  * @author Andy Clement
- * @since 3.0
  * @see org.springframework.expression.spel.standard.SpelExpressionParser#SpelExpressionParser(SpelParserConfiguration)
+ * @since 3.0
  */
 public class SpelParserConfiguration {
 
