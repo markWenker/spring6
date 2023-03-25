@@ -7,4 +7,5 @@
 		<property name="age" value="11"></property>
 	</bean>
 	<bean class="org.springframework.selfbdrpp.MyBeanDefinitionRegistryPostProcessor"></bean>
+	<bean class="org.springframework.selfbdrpp.MyBeanFactoryPostProcessor"></bean>
 </beans>
