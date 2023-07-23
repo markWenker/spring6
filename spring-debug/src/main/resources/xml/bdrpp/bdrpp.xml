@@ -6,6 +6,6 @@
 		<property name="name" value="zhangsan"></property>
 		<property name="age" value="11"></property>
 	</bean>
-	<bean class="org.springframework.selfbdrpp.MyBeanDefinitionRegistryPostProcessor"></bean>
-	<bean class="org.springframework.selfbdrpp.MyBeanFactoryPostProcessor"></bean>
+	<bean class="org.springframework.selfbdrpp.MyBeanDefinitionRegistryPostProcessor"/>
+	<bean class="org.springframework.selfbdrpp.MyBeanFactoryPostProcessor"/>
 </beans>
